@@ -204,3 +204,6 @@ a{
 padding-left: 68px;
 
 }
+.button :hover{
+    cursor: pointer;
+}
