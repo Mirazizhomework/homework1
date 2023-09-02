@@ -1,0 +1,315 @@
+:root {
+    --color-text: #2f281e;
+    --color-link: #1943ef;
+    --color-light: #ffffff;
+    --color-hover: #ff7549;
+    --color-error: #f03e3d;
+    --color-border: #bcd0e5;
+    --color-primary: #ff9900;
+    --color-subtitle: #544837;
+    --color-tag-grey: #f5f5f5;
+    --color-secondary: #173a56;
+    --color-tag-border: #d7d7d7;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Open Sans", "Poppins", Arial, Helvetica, sans-serif;
+    color: var(--color-text);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.wrapper {
+    max-width: 1198px;
+    width: calc(100vw - 46px);
+    margin: 0 auto;
+}
+
+.header {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    padding-top: 15px;
+    padding-bottom: 17px;
+}
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-group {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 11.38px;
+}
+.navigation-list {
+    display: flex;
+    gap: 20px;
+}
+.list-link {
+    text-decoration: none;
+    color: var(--color-text);
+}
+.list-link:hover {
+    color: var(--color-primary);
+}
+
+.btn {
+    text-align: center;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 11px 27px 13px;
+}
+.btn:active {
+    scale: 0.98;
+}
+.btn-bordered {
+    background: none;
+    color: var(--color-secondary);
+    border: 1px solid var(--color-border);
+}
+.btn-bordered:hover {
+    background-color: var(--color-border);
+}
+.btn-colored {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+.btn-colored:hover {
+    background-color: var(--color-hover);
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Promo section */
+.promo {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.layout-2-column {
+    display: flex;
+    align-items: center;
+}
+.promo__content {
+    padding-right: 90px;
+}
+.promo__title {
+    color: var(--color-text);
+    font-family: "Poppins";
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 30px;
+}
+.promo__description {
+    color: var(--color-subtitle);
+    font-family: "Poppins";
+    font-size: 1.8rem;
+    margin-bottom: 45px;
+}
+.promo__btn-group {
+    display: flex;
+    gap: 44px;
+    align-items: center;
+}
+.video-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.video-link > a {
+    color: var(--color-primary);
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.video-link > a:hover {
+    color: var(--color-hover);
+}
+.header__word{
+    color: #2F281E;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 462px;
+}
+.icon__header{
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    margin-top: 61.17px;
+}
+.purpleicon{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 19px;
+    background: #7752BE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mouseicon{
+    color: #FFF;
+    font-family: "FontAwesome";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 13.118px;
+}
+.yellowicon{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 19px;
+    background: #FAB005;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.designicon{
+    width: 19.677px;
+    color: #FFF;
+    font-family: "FontAwesome";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.redicon{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 19px;
+    background: #F03E3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hearticon{
+    width: 17.49px;
+    color: #FFF;
+    font-family: "FontAwesome";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.blueicon{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 19px;
+    background: #4DADF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clockicon{
+    width: 15.304px;
+    color: #FFF;
+    font-family: "FontAwesome";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.icons__flex{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+.iconword{
+    color: #2F281E;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 30px;
+}
+.iconword2{
+    color: #544837;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 262.356px;
+}
+.icon_linear{
+    width: 1197px;
+    height: 277px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, rgba(255, 229, 210, 0.63) 0.33%, rgba(255, 244, 229, 0.00) 99.67%);
+    border-bottom-left-radius: 5000px;
+    border-bottom-right-radius: 5000px;
+}
+.icon_signbutton{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.signbox{
+    width: 171.545px;
+    height: 53px;
+    flex-shrink: 0;
+    background-color: var(--color-primary);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 543px;
+}
+.signbutton :hover{
+    cursor: pointer;
+    background-color: var(--color-hover);
+    scale: 0.98;
+}
+.sign{
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
